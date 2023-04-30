@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCtype html>
+<html>
+	<head>
+		<title>Lag</title>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> 
+		
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		
+		<link rel='stylesheet' href="{%static 'main.css'%}">
+		
+		<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+  	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  	  
+	</head>
+	<body>
+		<nav>
+	
+			<div class='nav'>
+			
+				<div class='logo'>
+					<h1 class='logo-h1' class='log'>La<span>g</span></h1>
+				</div>
+				
+		<div class='nav-link-container'>
+			<div class='nav-link'>
+				<a href='#home'>
+					<h1>HOME</h1>
+				</a>
+				<a href='#about'>
+					<h1>ABOUT</h1>
+				</a>
+				<a href='#service'>
+					<h1>SERVICE</h1>
+				</a>
+				<a href='#contact'>
+					<h1>CONTACT</h1>
+				</a>
+			</div>
+		</div>
+				
+				<div class='menu-container'>
+					<i class='bx bx-menu' id='menu-bar'></i>
+				</div>
+				
+			</div>
+		</nav>
+
+		<section id='home'>
+			<div class='home-container'>
+				<div class="headline">
+					<h3>Let'<span>$</span></h3>
+					<h3>Bring Your</h3>
+					<h3>BUSINESS</h3>
+					<h1>ONL<span><i class='bx' id='wifi'></i></span>NE</h1>
+					
+				</div>
+				
+			</div>
+		</section>
+
+		<section id="about">
+				<div class='about-layer'>
+					<div class='img'>
+						<img src="{% static 'ola.jpg' %}">
+					</div>
+				
+					<div class='about'>
+						<span>
+							<button><h3>I'm	</h3></button>
+							<h1>Juwon <hr></h1>
+						</span>
+						<div>
+						<p>FRONTEND DEVELOPER</p>
+						<h4>With a proven ability to create responsive website and mobile app to maximize user efficiency.</h4>
+						
+						</div>
+						<a href="#contact"><button>
+							Hire Me
+						</button></a>
+
+						
+					</div>
+				</div>	
+		</section>
+			
+		<section id='service'>
+			<h1>SERVICE<hr></h1>
+					
+			<div class='service-container'>
+				
+				<div class='service-layer'>
+				
+					<div class='icon'>
+						<i class='bx bxs-edit bx-tada' ></i>
+						<h3>WEB DESIGN</h3>
+					</div>
+					<div class='icon-box'>
+						<p>Build from scratch, upgrade and renew website that support all platforms.</p>
+						<span class='bx bxs-edit bx-tada' ></span>
+					</div>
+				</div>
+					
+				<div class='service-layer'>
+					<div class='icon'>
+						<i class='bx bx-code-alt bx-tada' ></i>
+						<h3>WEB DEVELOPMENT</h3>
+					</div>
+					<div class='icon-box'>
+						<p>Our websites are programmed to work seamlessly on all devices(Desktop, Mobile and Tablet).</p>
+						<span class='bx bx-code-alt bx-tada' ></span>
+					</div>
+				</div>
+				<div class='service-layer'>
+					<div class='icon'>
+						<i class='bx bxs-mobile bx-tada' ></i>
+						<h3>MOBILE APP DEVELOPMENT</h3>
+					</div>
+					<div class='icon-box'>
+						<p>Delivering digital transformation with mobile app that enable to do business-anywhere,anytime.</p>
+						<span class='bx bxs-mobile bx-tada'></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id='contact'>
+			<div class='contact-container'>
+				<div class="form-layer">
+					<form method='POST' action=''>
+						<input	type='text' name='name' placeholder='Your Nickname'>
+						<input	type='text' name='mail' placeholder='Your E-mail'>
+						<input	type='number' name='contact' placeholder='Your Mobile Number'>
+						<textarea id='textarea' cols='10' rows='' name='texrarea' placeholder='messages.....' ></textarea>
+						<input type='submit' name='submit' value='send' id='submit'>
+					
+					</form>
+				</div>
+
+			<div class='info-container'>
+				<div class="contact">
+					<h1>Contact<hr></h1>
+					<p>For any web project and maintainance.</p>
+				</div>
+				<div class="contact-icon">
+
+					<a href="https://github.com/hollarteju/git">
+						<i data='hollarteju' class='bx bxl-github' ></i>
+					</a>
+					<a href="https://twitter.com/@hollartej_u">
+							<i data='@hollartej_u'  class='bx bxl-twitter' ></i>
+					</a>
+					<i data='+2347052490998'  class='bx bxl-whatsapp' ></i>
+				
+					<i data='hollarteju' class='bx bxl-linkedin' ></i>
+		
+				</div>
+			</div>
+		</div>
+			
+		</section>
+
+		
+		
+			
+	</body>
+	<script src="{% static 'script.js'%}"></script>
+	
+</html>
