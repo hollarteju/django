@@ -48,7 +48,7 @@ menuBar.onclick=()=>{
 };
 
 function back(){
-	if(window.scrollY > 900 && window.scrollY < 2600 && window.innerWidth > 420){
+	if(window.scrollY > 900 && window.scrollY < 2600){
 		nav.classList.add("nav-active")	
 	}
 	else{
