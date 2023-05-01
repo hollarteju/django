@@ -14,7 +14,13 @@ let icons=[
 	'bx-wifi-1',
 	'bx-wifi-2'];
 
-const linkBtn = navlink.forEach();
+navlink.forEach(e =>{
+e.onclick=()=>{
+	navLink.classList.remove("nav-link-active");
+	menuBar.classList.remove('bx-x');
+	menuCnt.classList.remove('menu-active');
+};  
+});
 
 menuBar.onclick=()=>{	
 	menuBar.classList.toggle('bx-x');
@@ -22,12 +28,6 @@ menuBar.onclick=()=>{
 	navLink.classList.toggle('nav-link-active');
 	body.classList.toggle('.body');
 
-};
-
-linkBtn.onclick=()=>{
-	navLink.classList.remove("nav-link-active");
-	menuBar.classList.remove('bx-x');
-	menuCnt.classList.remove('menu-active');
 };
 
 
