@@ -30,11 +30,22 @@ menuBar.onclick=()=>{
 	const liveicon=()=>{
 	if(i>0){
 	i--;
-	liveIcon.classList.remove(icons[i]);
-		liveIcon.classList.remove(icons[i-1]);
+	wifiIcon.classList.remove(icons[i]);
+		wifiIcon.classList.remove(icons[i-1]);
 		i--;	
 	}
 };
+
+function back(){
+	if(window.scrollY > 900 && window.scrollY < 2600 && window.innerWidth > 495){
+		nav.classList.add("nav-active")	
+	}
+	else{
+		nav.classList.remove("nav-active")	
+	}
+};
+
+window.addEventListener("scroll",back);
 
 setInterval(liveicons,1000);
 setInterval(liveicon,4000);

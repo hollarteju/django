@@ -24,9 +24,11 @@ nav{
 	background-color:var(--blue);
 	z-index: 1000;
 	transition: ease 1s;
-	box-shadow:0 2px 1px 1px var(--skyblue);
 }
 
+.nav-active{
+	box-shadow:0 2px 1px 1px var(--skyblue);
+}
 
 .nav{
 	display:flex;
@@ -283,10 +285,10 @@ img{
 #contact{
 	background-color:var(--white);
 	position: relative;
+	width: 100%;
 }
 
 .contact-container{
-	
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 100px;
@@ -580,10 +582,12 @@ form textarea:hover{
 	display: block;
 	position: relative;
 	transition: ease 1s;
+	gap:0
 }
 
 .form-layer{
-	padding-bottom: 150px;
+	padding-bottom: 100px;
+	width: 90%;
 }
 
 
