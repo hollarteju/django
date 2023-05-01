@@ -24,7 +24,9 @@ menuBar.onclick=()=>{
 };
 
 navlink.onclick=()=>{
-	navLink.classList.remove("nav-link-active")
+	navLink.classList.remove("nav-link-active");
+	menuBar.classList.remove('bx-x');
+	menuCnt.classList.remove('menu-active');
 };
 
 

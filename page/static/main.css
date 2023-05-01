@@ -92,9 +92,11 @@ nav{
 .nav-link ul a{
 	font-size:12px;
 	color:white;
+}
+
+.nav-link ul li{
 	padding: 0 10px;
 	margin-right: 10px;
-	
 }
 
 .nav-link ul a:hover{
