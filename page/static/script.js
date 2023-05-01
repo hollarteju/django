@@ -4,6 +4,7 @@ const navLink=	document.querySelector('.nav-link-container');
 const wifiIcon=	document.querySelector('#wifi');
 const nav = document.querySelector("nav");
 const body =  document.querySelector("body");
+const navlink =  document.querySelector(".nav-link ul li");
 
 
 let i=0;
@@ -20,6 +21,10 @@ menuBar.onclick=()=>{
 	navLink.classList.toggle('nav-link-active');
 	body.classList.toggle('.body');
 
+};
+
+navlink.onclick=()=>{
+	navLink.classList.remove("nav-link-active")
 };
 
 
