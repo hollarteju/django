@@ -87,11 +87,7 @@ nav{
 .nav-link ul{
 	display: flex;
 	position: relative;
-	}	
-
-.nav ul li{
-       margin-bottom: 30px;
-}
+	
 
 .nav-link ul a{
 	font-size:12px;
@@ -99,7 +95,7 @@ nav{
 }
 
 .nav-link ul li{
-	padding: 0 10px;
+	padding: 40px 10px;
 	margin-right: 10px;
 }
 
