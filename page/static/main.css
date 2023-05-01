@@ -12,8 +12,8 @@
 	--red:#ff0000;
 }
 
-.body-active{
-	position:fixed
+.body{
+	position:sticky
 }
 
 
@@ -354,7 +354,6 @@ form textarea:hover{
 }
 
 .contact-icon{
-	margin-top: 20px;
 	font-size: 40px;
 }
 
@@ -503,7 +502,7 @@ form textarea:hover{
 	width: 100%;
 	top:65px;
 	height: 100vh;
-	right: -3000px;
+	right: -110%;
 	display: block;
 	background-color: var(--skyblue);
 	transition:1s ease;	
@@ -582,12 +581,15 @@ form textarea:hover{
 	display: block;
 	position: relative;
 	transition: ease 1s;
-	gap:0
+	gap:0;
+	align-items: center;
 }
 
 .form-layer{
 	padding-bottom: 100px;
-	width: 90%;
+	width: 100%;
+	position: relative;
+	margin-left: -6.5%;
 }
 
 
@@ -598,7 +600,7 @@ form textarea:hover{
 
 .contact-icon i::after{
 	content:attr(data);
-	right: 28%;
+	right: 25%;
 	top: 90%;
 }
 	
@@ -636,6 +638,11 @@ form textarea:hover{
 }
 
 }
+
+.icon i{
+	font-size:130px;
+}
+
 
 
 @media(max-width:420px){

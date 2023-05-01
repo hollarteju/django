@@ -3,6 +3,7 @@ const menuCnt=	document.querySelector('.menu-container');
 const navLink=	document.querySelector('.nav-link-container');
 const wifiIcon=	document.querySelector('#wifi');
 const nav = document.querySelector("nav");
+const body =  document.querySelector("body");
 
 
 let i=0;
@@ -17,6 +18,8 @@ menuBar.onclick=()=>{
 	menuBar.classList.toggle('bx-x');
 	menuCnt.classList.toggle('menu-active');
 	navLink.classList.toggle('nav-link-active');
+	body.classList.toggle('.body');
+
 };
 
 
@@ -37,7 +40,7 @@ menuBar.onclick=()=>{
 };
 
 function back(){
-	if(window.scrollY > 900 && window.scrollY < 2600 && window.innerWidth > 495){
+	if(window.scrollY > 900 && window.scrollY < 2600 && window.innerWidth > 420){
 		nav.classList.add("nav-active")	
 	}
 	else{
