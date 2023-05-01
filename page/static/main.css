@@ -87,6 +87,7 @@ nav{
 .nav-link ul{
 	display: flex;
 	position: relative;
+}
 	
 
 .nav-link ul a{
@@ -95,7 +96,7 @@ nav{
 }
 
 .nav-link ul li{
-	padding: 40px 10px;
+	padding: 0 10px;
 	margin-right: 10px;
 }
 
@@ -521,6 +522,11 @@ form textarea:hover{
 	font-size:35px;
 	color:var(--blue);	
 }
+
+.nav-link ul li{
+	margin-bottom:40px;
+}
+
 
 
 .nav-link-active{
