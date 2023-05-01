@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCtype html>
 <html>
 	<head>
@@ -11,7 +10,7 @@
 		
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		
-		<link rel='stylesheet' href="{%static 'main.css'%}">
+		<link rel='stylesheet' type='text/css' href="page/static/main.css">
 		
 		<link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -68,7 +67,7 @@
 		<section id="about">
 				<div class='about-layer'>
 					<div class='img'>
-						<img src="{% static 'ola.jpg' %}">
+						<img src="page/static/ola.jpg">
 					</div>
 				
 					<div class='about'>
@@ -170,6 +169,6 @@
 		
 			
 	</body>
-	<script src="{% static 'script.js'%}"></script>
+	<script type="text/javascript" src="page/static/script.js"></script>
 	
 </html>
