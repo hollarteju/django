@@ -3,6 +3,7 @@ const menuCnt=	document.querySelector('.menu-container');
 const navLink=	document.querySelector('.nav-link-container');
 const wifiIcon=	document.querySelector('#wifi');
 const nav = document.querySelector("nav");
+const navHref = document.querySelectorAll(".nav-link a");
 
 
 let i=0;
@@ -11,7 +12,14 @@ let icons=[
 	'bx-wifi-0',
 	'bx-wifi-1',
 	'bx-wifi-2'];
-	
+
+	navHref.forEach(href=>{
+		href.addEventListener("click", ()=>{
+			menuBar.classList.remove('bx-x');
+	menuCnt.classList.remove('menu-active');
+	navLink.classList.remove('nav-link-active');
+		})
+	});
 
 menuBar.onclick=()=>{	
 	menuBar.classList.toggle('bx-x');
