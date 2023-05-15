@@ -406,7 +406,7 @@ form textarea:hover{
 @media(max-width:1023px){
 	
 .service-layer{
-	height:270px;
+	height:290px;
 	}
 
 	
@@ -470,21 +470,37 @@ form textarea:hover{
 	.contact-icon i::after{
 		left: 58%;
 	}
+	
+.icon h3{	
+	color:white;
+	font-size:12px;
+	padding: 0 20px;
+}	
 
-		
-.service-layer{
-	height:250px;
-	}
+
+.icon i{
+	font-size:100px;
+}
+
+#service-layer{
+	height: 200px;
+}
 
 		
 .service-layer:hover .icon h3{
-	font-size:15px ;
+	font-size:12px ;
+}
+
+		
+.service-layer:hover .icon-box p{
+	font-size:0.8rem ;
 }
 
 	
 .service-layer:hover .icon{
 	padding:18px 0px;
 }
+
 }
 
 	
@@ -562,8 +578,25 @@ form textarea:hover{
 }
 
 
-.service-layer{
+#service-layer{
 	height:350px;
+	width: 95%;
+	margin: 50px auto;
+}
+.icon i{
+	font-size:150px;
+}
+
+.icon h3{	
+	font-size:20px;
+}	
+
+.icon-box p{
+	padding-top:30px;
+}
+
+.service-layer:hover .icon-box p{
+	font-size: 18px;
 }
 
 		
@@ -649,7 +682,27 @@ form textarea:hover{
 	padding-top: 40%;
 }
 
+
+.icon i{
+	font-size:100px;
 }
+
+
+#service-layer{
+	height:275px;
+}
+
+.service-layer:hover .icon h3{
+	font-size:18px ;
+}
+
+	
+.service-layer:hover .icon-box span{
+	font-size:80px ;
+}
+
+}
+
 
 
 @media(max-width:420px){
@@ -710,7 +763,7 @@ form textarea:hover{
 
 }
 
-@media(max-width:279px){
+@media(max-width:345px){
 			
 .home-container h3:nth-child(1){
 	font-size: 10px;
@@ -749,8 +802,8 @@ form textarea:hover{
 	font-size:80px ;
 }
 
-.service-layer{
-	height:265px;
+#service-layer{
+	height:230px;
 }
 }
 	
