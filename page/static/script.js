@@ -4,6 +4,7 @@ const navLink=	document.querySelector('.nav-link-container');
 const wifiIcon=	document.querySelector('#wifi');
 const nav = document.querySelector("nav");
 const navHref = document.querySelectorAll(".nav-link a");
+const popUpMsg= document.querySelector(".pop-up-message");
 
 
 let i=0;
@@ -53,8 +54,13 @@ function back(){
 	}
 };
 
+const pop=()=>{
+	popUpMsg.classList.add("remove-pop")
+};
+
 window.addEventListener("scroll",back);
 
 setInterval(liveicons,1000);
 setInterval(liveicon,4000);
+setInterval(pop,4000);
 
