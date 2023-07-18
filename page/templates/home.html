@@ -133,15 +133,19 @@
 		<section id='contact'>
 			<div class='contact-container'>
 				<div class="form-layer">
-					<form>
-					
-						<input	type='text' name='name' placeholder='Your Name'>
+					<form method="POST" action="/">
 						
-						<input	type='text' name='mail' placeholder='Your E-mail(Optional)'>
+						{%csrf_token%}
+						{%for message in messages%}
+						<p style="color: red;">	{{message}}</p>
+						{%endfor%}
+						<input	type='text' name='username' placeholder='Username' id="input" >
 						
-						<input	type='number' name='contact' placeholder='Your Mobile Number(Optional)'>
+						<input	type='text' name='mail' placeholder='E-mail (Optional)'>
+						
+						<input	type='number' name='contact' placeholder='PhoneNumber (Optional)'>
 					
-						<textarea id='textarea' name='texrarea' placeholder='messages.....'></textarea>
+						<textarea id='textarea' name='textarea' placeholder='messages.....'></textarea>
 						<input type='submit' name='submit' value='send' id='submit'>
 						
 					</form>
