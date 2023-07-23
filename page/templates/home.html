@@ -134,11 +134,12 @@
 			<div class='contact-container'>
 				<div class="form-layer">
 					<form method="POST" action="/">
-						
+						<div style='display:none'>
 						{%csrf_token%}
 						{%for message in messages%}
 						<p style="color: red;">	{{message}}</p>
 						{%endfor%}
+						</div>
 						<input	type='text' name='username' placeholder='Username' id="input" >
 						
 						<input	type='text' name='mail' placeholder='E-mail (Optional)'>
