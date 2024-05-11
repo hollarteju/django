@@ -288,6 +288,28 @@ img{
 	font-size:100px;
 }
 
+.portfolio{
+	padding-block: 60px;
+}
+
+.portfolio .layer .header{
+	text-align: center;
+}
+
+.portfolio .layer .header h1{
+	font-size: 30px;
+}
+
+.portfolio-content{
+	display: grid; 
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	text-align: center;
+	gap: 2.5rem;
+	padding-top: 5rem;
+	margin-inline: 10%;
+}
+
 #contact{
 	background-color:var(--white);
 	position: relative;
@@ -446,7 +468,15 @@ form textarea:hover{
 
 	.service-container{
 		margin: 0 5%;
-	}	
+	}
+	
+	.portfolio-content{
+		display: flex; 
+		flex-direction: column;
+		gap: 1.5rem;
+		padding-top: 5rem;
+		margin-inline: 5%;
+	}
 
 	.contact-container{
 		padding:100px 5%;
